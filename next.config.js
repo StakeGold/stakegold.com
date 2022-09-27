@@ -4,6 +4,9 @@ const nextConfig = {
   assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH,
   reactStrictMode: true,
   swcMinify: true,
+  images: {
+    unoptimized: true
+  },
   async redirects() {
     return [
       {
